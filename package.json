@@ -5,7 +5,7 @@
   "license": "",
   "scripts": {
     "build:remix": "remix build",
-    "dev:remix": "remix watch",
+    "dev:remix": "PORT=3333 remix dev",
     "build:css": "cross-env NODE_ENV=production tailwindcss -i ./app/styles/tailwind.css -o ./app/styles/app.css --minify",
     "dev:css": "tailwindcss -i ./app/styles/tailwind.css -o ./app/styles/app.css --watch",
     "dev": "concurrently \"npm:dev:*\" \"npm:start\"",
